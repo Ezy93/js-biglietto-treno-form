@@ -1,4 +1,4 @@
-let userName = document.getElementById("userNameInput").value;
+let userName = document.getElementById("userNameInput");
 console.log(userName);
 
 let tripLength = document.getElementById("tripLengthInput").value;
@@ -21,8 +21,9 @@ let oldAgeTicket = fullPriceTicket * 0.33;
 
 btnGenerator.addEventListener("click", function() {
     
+    userName = document.getElementById("userNameInput").value;
     document.getElementById("passengerName").innerHTML = userName;
-    
+
     let dnoneRemove = document.getElementById("hidden");
     dnoneRemove.classList.remove("d-none");
 });
