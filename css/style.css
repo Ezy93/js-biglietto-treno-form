@@ -22,3 +22,10 @@ form{
 .my-text-gray{
     color: lightslategray;
 }
+
+#username,
+#triplength,
+#userage{
+    border: 1px solid chartreuse;
+    border-radius: 15px;
+}
