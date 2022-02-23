@@ -8,6 +8,8 @@ console.log(tripLength);
 
 const btnGenerator = document.getElementById("ticketGenerator");
 
+const btnCancel = document.getElementById("cancel");
+
 
 const pricePerKm = 0.27;
 
@@ -25,7 +27,7 @@ btnGenerator.addEventListener("click", function() {
     document.getElementById("passengerName").innerHTML = userName;
 
     let userAge = document.getElementById("userAgeInput").value;
-    console.log(userAge)
+    console.log(userAge);
 
     if (userAge == "minorenne"){
 
@@ -54,5 +56,28 @@ btnGenerator.addEventListener("click", function() {
 
     let dnoneRemove = document.getElementById("hidden");
     dnoneRemove.classList.remove("d-none");
+
+    let dnoneSecond = document.getElementById("secondHidden");
+    dnoneSecond.classList.remove("d-none");
 });
+
+btnCancel.addEventListener ("click" , function(){
+    let userName = document.getElementById("userNameInput").value = "";
+
+    let tripLength = document.getElementById("tripLengthInput").value = "";
+
+    document.getElementById("passengerName").innerHTML = "";
+
+    document.getElementById("offering").innerHTML = "";
+
+    document.getElementById("carriageNumber").innerHTML = "";
+
+    document.getElementById("cpCode").innerHTML = "";
+
+    let dnoneRemove = document.getElementById("hidden");
+    dnoneRemove.classList.add("d-none");
+
+    let dnoneSecond = document.getElementById("secondHidden");
+    dnoneSecond.classList.add("d-none");
+})
 
