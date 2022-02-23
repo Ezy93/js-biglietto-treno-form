@@ -27,12 +27,12 @@ btnGenerator.addEventListener("click", function() {
     let userAge = document.getElementById("userAgeInput").value;
     console.log(userAge)
 
-    if (userAge = "minorenne"){
+    if (userAge == "minorenne"){
 
         document.getElementById("finalPrice").innerHTML = teenAgeTicket.toFixed(2);
         document.getElementById("offering").innerHTML = "tariffa ridotta per minorenni";
 
-    }else if(userAge = "over65"){
+    }else if(userAge == "over65"){
 
         document.getElementById("finalPrice").innerHTML = oldAgeTicket.toFixed(2);
         document.getElementById("offering").innerHTML = "tariffa ridotta per anziani";
