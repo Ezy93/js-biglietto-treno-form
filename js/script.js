@@ -4,8 +4,6 @@ console.log(userName);
 let tripLength = document.getElementById("tripLengthInput").value;
 console.log(tripLength);
 
-let userAge = document.getElementById("userAgeInput").value;
-console.log(userAge);
 
 
 
@@ -27,12 +25,14 @@ btnGenerator.addEventListener("click", function() {
     userName = document.getElementById("userNameInput").value;
     document.getElementById("passengerName").innerHTML = userName;
 
-    if (userAge = "minorenne"){
+    let userAge = document.forms.MyForm.età.selectedIndex;
 
-    document.getElementById("finalPrice").innerHTML = teenAgeTicket.toFixed(2);
-    document.getElementById("offering").innerHTML = "tariffa ridotta per minorenni";
+    if (userAge = 0){
 
-    }else if(userAge = "over65"){
+        document.getElementById("finalPrice").innerHTML = teenAgeTicket.toFixed(2);
+        document.getElementById("offering").innerHTML = "tariffa ridotta per minorenni";
+
+    }else if(userAge = 1){
 
         document.getElementById("finalPrice").innerHTML = oldAgeTicket.toFixed(2);
         document.getElementById("offering").innerHTML = "tariffa ridotta per anziani";
