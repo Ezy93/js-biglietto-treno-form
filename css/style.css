@@ -1,14 +1,13 @@
 main{
     width: 100vw;
     height: 100vh;
-    background-color: chartreuse;
 }
 
 section{
     background-color: lightgray;
     height: 35vh;
-    border: 1px solid yellow;
     border-radius: 10px;
+    border: 1px solid yellow;
 }
 
 form{
@@ -23,9 +22,23 @@ form{
     color: lightslategray;
 }
 
-#username,
-#triplength,
-#userage{
+.my-heigth{
+    height: 80%;
+}
+
+.my-bg-green,
+main{
+    background-color: chartreuse;
+}
+
+.my-border{
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+}
+
+#userNameInput,
+#tripLengthInput,
+#userAgeInput{
     border: 1px solid chartreuse;
     border-radius: 15px;
 }
