@@ -23,6 +23,12 @@ let oldAgeTicket = fullPriceTicket * 0.33;
 
 btnGenerator.addEventListener("click", function() {
 
+    const fullPriceTicket = tripLength * 0.27;
+
+    let teenAgeTicket = fullPriceTicket * 0.17;
+
+    let oldAgeTicket = fullPriceTicket * 0.33;
+
     userName = document.getElementById("userNameInput").value;
     document.getElementById("passengerName").innerHTML = userName;
 
